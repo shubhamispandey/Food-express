@@ -45,39 +45,52 @@ const video = document.querySelector('.header__video');
 const videoControl = document.querySelector('.header__control--video');
 const videoIcon = document.querySelector('.icon-video');
 
+const audio = document.querySelector('.header__audio');
 const audioControl = document.querySelector('.header__control--audio');
 const audioIcon = document.querySelector('.icon-audio');
 
 // * variables
-let isPlaying = true;
-let mute = true;
+let isPlaying = false;
+let mute = false;
+audio.volume = 0.2;
+video.pause();
+audio.pause();     
 
 // * functions
 
-video.volume = 0.4;
-video.pause();
 const videoControlFunction = function () {
     if (isPlaying) {
         videoIcon.classList.toggle('fa-pause-circle');
         videoIcon.classList.toggle('fa-play-circle');
         video.pause();
+        audio.pause();
     } else {
         videoIcon.classList.toggle('fa-pause-circle');
         videoIcon.classList.toggle('fa-play-circle');
         video.play();
+        audio.play();
     }
     isPlaying = !isPlaying
 }
 const audioControlFunction = function () {
     audioIcon.classList.toggle('fa-volume-up');
     audioIcon.classList.toggle('fa-volume-mute');
-    video.muted = mute;
+    audio.muted = mute;
     mute = !mute;
 }
 
 // * eventlistners
 videoControl.addEventListener('click', videoControlFunction);
 audioControl.addEventListener('click', audioControlFunction);
+
+
+// ! loading animation ----------------------------
+const load = document.querySelector('.loading');
+window.onload = function () {
+    load.style.transition = 'all 1s 1s';
+    load.style.opacity = '0';
+    load.style.visibility = 'hidden';
+}
 
 // ! network check------------------------------------
 // ! -------------------------------------------------
@@ -86,25 +99,6 @@ if (navigator.connection && !!navigator.connection.effectiveType) {
     if (navigator.connection.effectiveType === '4g') {
         video.style.opacity = '1';
     } else {
-        video.setAttribute('src', 'food1.mp4')
+        video.setAttribute('src', '2.mp4');
     }
-} else {
-
 }
-
-// ! loading animation ----------------------------
-const load = document.querySelector('.loading');
-window.onload = function () {
-    load.style.transition = 'all 1s 0.2s';
-    load.style.opacity = '0';
-    video.play();
-}
-
-if (load.style.opacity == '0') {
-    load.style.display = 'none';
-}
-
-// ! prevent scrolling on loading
-load.addEventListener('touchmove', function (e) {
-    e.preventDefault();
-}, false);

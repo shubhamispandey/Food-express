@@ -1,1 +1,271 @@
-@media (max-width:810px){.nav-bar nav{float:left;margin:5px 40% inherit}.mobile-nav-ul{display:none}.nav-bar nav ul li{display:block;margin:auto}.nav-bar nav ul li a{display:block;border:0}.nav-bar nav ul li a:hover{border:0}.mobile-nav{margin-top:30px;margin-right:30px}.mobile-nav.js-nav-icon{display:inline-block}.header-title-buttons h1{font-size:190%}.form{margin:auto}.footer-nav{flex-wrap:wrap;justify-content:center}.footer-nav-left,.footer-nav-right{float:none;margin-right:30px}.footer-nav-right{margin-right:0;margin-top:20px}.footer-nav-right ion-icon{width:25px;height:25px}.footer-text ul li:last-child{display:block;margin:auto;text-align:center;margin-top:5px}}@media (max-width:500px){.header-title-buttons{width:100%}.header-title{width:96%;margin:auto;margin-bottom:20px}.header-title-buttons h1{font-size:140%}.header-title-buttons a{margin:auto 5px 15px}.contact-us-form-subdiv{width:95%}.form{width:35%;min-width:330px;height:80%}.form h3{font-size:170%}.form-phone input{padding-left:7px;padding-right:7px}.footer{padding-bottom:20px}.footer-nav{font-size:60%;width:100%}.footer-nav-left{justify-content:center;margin:auto;width:96%;text-align:center}.footer-nav-left ul li{margin-right:15px}.footer-nav-right{text-align:center}.footer-nav-right ion-icon{width:20px;height:20px}.footer-text{font-size:60%;margin-top:15px;text-align:center}}@media (max-width:470px){html{overflow-x:hidden}.logo-div{margin-left:0;padding-right:0}.header-title-buttons{width:80;box-sizing:border-box;text-align:center;left:10px;transform:translate(0,-50%);min-width:300px;padding-right:0}.header-title-buttons h1{font-size:125%}.header-title-button-break{display:block}.header-title-buttons a{margin-left:10%}.features{padding-left:10px}.feature-header{min-width:280px;margin-right:0}.features h1{min-width:260px;width:80%;font-size:150%;margin-left:10%}.sign-up .heading h1{font-size:130%}.plans-row{padding-left:5px;padding-right:0;margin-left:2px;width:100%}.plans-col{margin-left:10%;min-width:250px}.form{position:relative;left:5px}}@media (max-width:380px){.header-title-buttons{left:-15px}.header-title-buttons h1{font-size:100%}.logo-div img{width:70px;height:70px;margin-top:20px}.mobile-nav{margin-right:15px}.form{width:98%;min-width:280px}}@media (max-width:330px){.mobile-nav ion-icon{width:30px;height:30px;margin-right:5px;margin-top:15px}.features{padding-right:5px}.feature-header p{width:95%;min-width:250px;margin-left:2px;font-size:90%}.plans-row{text-align:center}.plans-col{width:90%;min-width:280px;margin-left:-10px}}
+@media (max-width:810px) {
+    .nav-bar nav {
+        float: left;
+        margin: 5px 40% inherit
+    }
+
+    .mobile-nav-ul {
+        display: none
+    }
+
+    .nav-bar nav ul li {
+        display: block;
+        margin: auto
+    }
+
+    .nav-bar nav ul li a {
+        display: block;
+        border: 0
+    }
+
+    .nav-bar nav ul li a:hover {
+        border: 0
+    }
+
+    .mobile-nav {
+        margin-top: 30px;
+        margin-right: 30px
+    }
+
+    .mobile-nav.js-nav-icon {
+        display: inline-block
+    }
+
+    .header-title-buttons h1 {
+        font-size: 190%
+    }
+
+    .form {
+        margin: auto
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .footer-nav-left,
+    .footer-nav-right {
+        float: none;
+        margin-right: 30px
+    }
+
+    .footer-nav-right {
+        margin-right: 0;
+        margin-top: 20px
+    }
+
+    .footer-nav-right ion-icon {
+        width: 25px;
+        height: 25px
+    }
+
+    .footer-text ul li:last-child {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 5px
+    }
+}
+
+@media (max-width:500px) {
+    *::selection{
+        background: none;
+    }
+    .header-title-buttons {
+        width: 100%
+    }
+
+    .header-title {
+        width: 96%;
+        margin: auto;
+        margin-bottom: 20px
+    }
+
+    .header-title-buttons h1 {
+        font-size: 140%
+    }
+
+    .header-title-buttons a {
+        margin: auto 5px 15px
+    }
+
+    .contact-us-form-subdiv {
+        width: 95%
+    }
+
+    .form {
+        width: 35%;
+        min-width: 330px;
+        height: 80%
+    }
+
+    .form h3 {
+        font-size: 170%
+    }
+
+    .form-phone input {
+        padding-left: 7px;
+        padding-right: 7px
+    }
+
+    .footer {
+        padding-bottom: 20px
+    }
+
+    .footer-nav {
+        font-size: 60%;
+        width: 100%
+    }
+
+    .footer-nav-left {
+        justify-content: center;
+        margin: auto;
+        width: 96%;
+        text-align: center
+    }
+
+    .footer-nav-left ul li {
+        margin-right: 15px
+    }
+
+    .footer-nav-right {
+        text-align: center
+    }
+
+    .footer-nav-right ion-icon {
+        width: 20px;
+        height: 20px
+    }
+
+    .footer-text {
+        font-size: 60%;
+        margin-top: 15px;
+        text-align: center
+    }
+}
+
+@media (max-width:470px) {
+    html {
+        overflow-x: hidden
+    }
+
+    .logo-div {
+        margin-left: 0;
+        padding-right: 0
+    }
+
+    .header-title-buttons {
+        width: 80;
+        box-sizing: border-box;
+        text-align: center;
+        left: 10px;
+        transform: translate(0, -50%);
+        min-width: 300px;
+        padding-right: 0
+    }
+
+    .header-title-buttons h1 {
+        font-size: 125%
+    }
+
+    .header-title-button-break {
+        display: block
+    }
+
+    .header-title-buttons a {
+        margin-left: 10%
+    }
+
+    .features {
+        padding-left: 10px
+    }
+
+    .feature-header {
+        min-width: 280px;
+        margin-right: 0
+    }
+
+    .features h1 {
+        min-width: 260px;
+        width: 80%;
+        font-size: 150%;
+        margin-left: 10%
+    }
+
+    .sign-up .heading h1 {
+        font-size: 130%
+    }
+
+    .plans-row {
+        padding-left: 5px;
+        padding-right: 0;
+        margin-left: 2px;
+        width: 100%
+    }
+
+    .plans-col {
+        margin-left: 10%;
+        min-width: 250px
+    }
+
+    .form {
+        position: relative;
+        left: 5px
+    }
+}
+
+@media (max-width:380px) {
+    .header-title-buttons {
+        left: -15px
+    }
+
+    .header-title-buttons h1 {
+        font-size: 100%
+    }
+
+    .logo-div img {
+        width: 70px;
+        height: 70px;
+        margin-top: 20px
+    }
+
+    .mobile-nav {
+        margin-right: 15px
+    }
+
+    .form {
+        width: 98%;
+        min-width: 280px
+    }
+}
+
+@media (max-width:330px) {
+    .mobile-nav ion-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 15px
+    }
+
+    .features {
+        padding-right: 5px
+    }
+
+    .feature-header p {
+        width: 95%;
+        min-width: 250px;
+        margin-left: 2px;
+        font-size: 90%
+    }
+
+    .plans-row {
+        text-align: center
+    }
+
+    .plans-col {
+        width: 90%;
+        min-width: 280px;
+        margin-left: -10px
+    }
+}

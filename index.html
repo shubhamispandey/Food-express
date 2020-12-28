@@ -26,19 +26,21 @@
         <span>Loading..</span>
     </div>
     <header class="header" id="header">
-        <video class="header__video" autoplay loop>
-            <source src="food2.mp4" type="video/mp4">
+        <video class="header__video" controlsList="nodownload" disablePictureInPicture loop muted>
+            <source src="1.mp4" type="video/mp4">
         </video>
+        <audio class="header__audio" src="audio.mp3" type="audio/mp3" loop muted>
+        </audio>
         <div class="header__control">
             <div class="header__control--audio">
                 <i class="icon-audio fas fa-volume-mute"></i>
             </div>
             <div class="header__control--video">
-                <i class="icon-video far fa-pause-circle"></i>
+                <i class="icon-video far fa-play-circle"></i>
             </div>
         </div>
         <div class="nav-bar">
-            <div class="logo-div"> <a href="#header"><img src="images/logo.png" alt=""></a> </div>
+            <div class="logo-div"> <a href="#header" draggable="false"><img src="images/logo.png" alt="" draggable="false"></a> </div>
             <nav>
                 <ul class="mobile-nav-ul js-main-nav">
                     <li><a href="#features">Food delivery</a></li>

@@ -3,8 +3,13 @@
     padding: 0
 }
 
+*::selection {
+    background: #748a7598;
+}
+
 body {
-    box-sizing: border-box
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -28,6 +33,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #030013;
+    overflow: hidden;
 }
 
 .loading .circle {
@@ -64,7 +70,8 @@ html {
     left: -50px;
     animation: loading 3s linear infinite;
 }
-.loading span{
+
+.loading span {
     position: absolute;
     top: 370px;
     color: #fff;
@@ -89,9 +96,9 @@ html {
 /* --------------------------------------------------------------------*/
 
 .header {
-    background-image: linear-gradient(rgb(0, 0, 0 , 0.5),rgb(0, 0, 0 , 0.5));
+    background-image: 
+    linear-gradient(to bottom, rgb(0, 0, 0, 0.4) 10%, rgba(141, 57, 57, 0.1) 20%);
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     height: 100vh;
     position: relative
@@ -99,7 +106,7 @@ html {
 
 /* --------------------------------------------------- */
 .header__video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -113,9 +120,18 @@ html {
     bottom: 20px;
     right: 20px;
     color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
-
+.header__control--audio,
+.header__control--video{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .header__control>* {
     display: inline-block;
     margin-right: 10px;
@@ -124,6 +140,10 @@ html {
 
 .header__control i {
     font-size: 35px;
+}
+
+audio:not([controls]) {
+    display: block !important;
 }
 
 /* ----------------------------------------------------- */
@@ -144,6 +164,7 @@ html {
 
 .header-title {
     margin-bottom: 30px;
+    text-shadow: 2px 2px 5px #ff0000;
     font-size: 200%;
     font-weight: 300;
     letter-spacing: 1px;
@@ -255,7 +276,7 @@ html {
 }
 
 .sticky {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -786,7 +807,8 @@ ion-icon {
 .cities {
     padding-top: 1px;
     padding-bottom: 80px;
-    color: #262626
+    color: #262626;
+    background: #fff;
 }
 
 .cities div {
@@ -1151,13 +1173,14 @@ cite {
 }
 
 .contact-us-form {
+    background: #fff;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     position: relative
 }
 
 .contact-us-form-subdiv {
-    height: 85vh;
+    min-height: 85vh;
     width: 90%;
     position: absolute;
     top: 50%;
@@ -1180,9 +1203,9 @@ cite {
     border-radius: 10px;
     box-shadow: 0 3px 21px 13px rgba(0, 0, 0, .4);
     width: 32%;
-    height: 83%;
     min-width: 350px;
-    margin-right: 100px
+    margin-right: 100px;
+    padding-bottom: 20px;
 }
 
 .form h3 {
@@ -1191,9 +1214,9 @@ cite {
     letter-spacing: 1px;
     word-spacing: 3px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #00b857;
-    margin-bottom: 50px
+    margin-bottom: 30px
 }
 
 .form-elem {
@@ -1287,7 +1310,7 @@ button {
 }
 
 .location {
-    margin-bottom: 15px
+    margin-bottom: 10px
 }
 
 .message-btn button {
